@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gzq-Ii-30R">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="12Q-PH-9Ed">
+            <objects>
+                <viewController id="gzq-Ii-30R" customClass="ViewController" customModule="azertyuio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23C-XS-TlH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1AA-mb-BxO">
+                                <rect key="frame" x="51" y="232.5" width="922" height="921.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1AA-mb-BxO" secondAttribute="height" multiplier="1:1" id="nDm-16-CdB"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="W2E-iR-RNi">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cellIdentifier" id="2Ad-MC-GsH" customClass="CaseCollectionViewCell" customModule="azertyuio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubinga_gauthey" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-ak-mF7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9K-8W-OSE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="C9K-8W-OSE" firstAttribute="height" secondItem="2Ad-MC-GsH" secondAttribute="height" id="Fc6-AM-iFq"/>
+                                            <constraint firstItem="LnR-ak-mF7" firstAttribute="centerY" secondItem="2Ad-MC-GsH" secondAttribute="centerY" id="JXW-c0-MTS"/>
+                                            <constraint firstItem="LnR-ak-mF7" firstAttribute="centerX" secondItem="2Ad-MC-GsH" secondAttribute="centerX" id="NJH-w4-73V"/>
+                                            <constraint firstItem="C9K-8W-OSE" firstAttribute="centerY" secondItem="2Ad-MC-GsH" secondAttribute="centerY" id="aoO-Z1-vxJ"/>
+                                            <constraint firstItem="C9K-8W-OSE" firstAttribute="centerX" secondItem="2Ad-MC-GsH" secondAttribute="centerX" id="j0m-gW-age"/>
+                                            <constraint firstItem="LnR-ak-mF7" firstAttribute="width" secondItem="2Ad-MC-GsH" secondAttribute="width" id="nf2-Rq-n7h"/>
+                                            <constraint firstItem="LnR-ak-mF7" firstAttribute="height" secondItem="2Ad-MC-GsH" secondAttribute="height" id="u4w-dx-2iU"/>
+                                            <constraint firstItem="C9K-8W-OSE" firstAttribute="width" secondItem="2Ad-MC-GsH" secondAttribute="width" id="zuj-0U-6x0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="caseBackgroundImageView" destination="LnR-ak-mF7" id="4Vk-P6-A1x"/>
+                                            <outlet property="pionView" destination="C9K-8W-OSE" id="gKW-Fy-y9a"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1AA-mb-BxO" firstAttribute="centerX" secondItem="KLW-BC-Wz4" secondAttribute="centerX" id="JBM-q6-b1P"/>
+                            <constraint firstItem="1AA-mb-BxO" firstAttribute="height" relation="lessThanOrEqual" secondItem="23C-XS-TlH" secondAttribute="height" multiplier="0.9" id="R1E-aH-m5e"/>
+                            <constraint firstItem="1AA-mb-BxO" firstAttribute="width" secondItem="23C-XS-TlH" secondAttribute="width" multiplier="90%" priority="750" id="hXm-uM-d3W"/>
+                            <constraint firstItem="1AA-mb-BxO" firstAttribute="centerY" secondItem="KLW-BC-Wz4" secondAttribute="centerY" id="wNm-fC-mWQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KLW-BC-Wz4"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="1AA-mb-BxO" id="Y0F-d3-cM9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRR-xf-1VO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106.640625" y="162.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubinga_gauthey" width="2480" height="1778"/>
+    </resources>
+</document>
